@@ -1,9 +1,72 @@
-<!doctype html5>
+<!doctype html>
 <html>
-  <head>
-    <title>FIXME ASAP</title>
-  </head>
-  <body>
-    Hellow
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>FIXME ASAP</title>
+  <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/gridster/dist/jquery.gridster.js"></script>
+  <link rel="stylesheet" href="/bower_components/gridster/dist/jquery.gridster.css">
+  <style type="text/css">
+.gridster {
+  background-color: #aba;
+}
+
+.gridster ul {
+  list-style-type: none;
+}
+
+
+.gridster .gs-w {
+  background: #DDD;
+  cursor: pointer;
+}
+
+.gridster .player {
+  background: #BBB;
+}
+  </style>
+  <link rel="import" href="/bower_components/paper-item/paper-item.html">
+  <link rel="import" href="/bower_components/paper-item/paper-icon-item.html">
+</head>
+<body>
+  Hellow
+  <div class="gridster" style="width: 1024px">
+    <ul>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <paper-icon-item>
+          <div class="content-icon">
+            Icon
+          </div>
+          <div class="flex">
+            Flex content
+          </div>
+        </paper-icon-item>
+      </li>
+      <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"></li>
+      <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
+
+      <li data-row="1" data-col="2" data-sizex="2" data-sizey="1"></li>
+      <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
+
+      <li data-row="1" data-col="4" data-sizex="1" data-sizey="1"></li>
+      <li data-row="2" data-col="4" data-sizex="2" data-sizey="1"></li>
+      <li data-row="3" data-col="4" data-sizex="1" data-sizey="1"></li>
+
+      <li data-row="1" data-col="5" data-sizex="1" data-sizey="1"></li>
+      <li data-row="3" data-col="5" data-sizex="1" data-sizey="1"></li>
+
+      <li data-row="1" data-col="6" data-sizex="1" data-sizey="1"></li>
+      <li data-row="2" data-col="6" data-sizex="1" data-sizey="2"></li>
+    </ul>
+  </div>
+  <script>
+$(function() {
+  $('.gridster ul').gridster({
+    widget_margins: [10, 10],
+    widget_base_dimensions: [140, 140]
+  });
+});
+  </script>
+</body>
 </html>
