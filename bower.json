@@ -1,0 +1,21 @@
+{
+  "name": "polygrid",
+  "version": "0.0.1",
+  "authors": [
+    "Jeong",
+    "Heon <blmarket@gmail.com>"
+  ],
+  "description": "Grid layout for web components",
+  "main": "index.html",
+  "license": "Commercial",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gridster": "~0.5.6"
+  }
+}
