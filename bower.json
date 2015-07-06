@@ -19,6 +19,7 @@
     "gridster": "~0.5.6",
     "jquery": "~2.1.4",
     "webcomponentsjs": "~0.7.5",
-    "paper-item": "PolymerElements/paper-item#~1.0.1"
+    "paper-item": "PolymerElements/paper-item#~1.0.1",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.0.2"
   }
 }
